@@ -1,4 +1,4 @@
-package generics;
+package com.sdp.generics;
 
 /**
  * Created by Basil on 11/01/2016.
