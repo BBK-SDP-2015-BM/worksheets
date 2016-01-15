@@ -23,18 +23,18 @@ public class HelloWorldSpring {
         mr.render();
     }
 
-    // bean factory
+    // bean factory spring boilerplate code
     private static BeanFactory getBeanFactory() throws Exception {
-// get the bean factory - understanding DefaultListableBeanFactory(0
-// not really important. It is just an Factory class example from
-// Spring.
+
+        // spring bean factories
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
-// create a definition reader
-        PropertiesBeanDefinitionReader rdr = new PropertiesBeanDefinitionReader(
-                factory);
-// load the configuration options
+        PropertiesBeanDefinitionReader rdr = new PropertiesBeanDefinitionReader(factory);
+
+        // load properties
         Properties props = new Properties();
         props.load(new FileInputStream("/Users/Basil/IdeaProjects/worksheets/src/com/sdp/helloworld/spring/basic/bean.properties"));
+
+        // read properties and create factory
         rdr.registerBeanDefinitions(props);
         return factory;
     }
