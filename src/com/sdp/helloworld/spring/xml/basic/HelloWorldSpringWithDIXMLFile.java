@@ -19,7 +19,7 @@ public class HelloWorldSpringWithDIXMLFile {
     private static BeanFactory getBeanFactory() throws Exception {
 
         // create bean factory from beans.xml (note use of file: to find beans??)
-        BeanFactory factory = new ClassPathXmlApplicationContext("file:/Users/Basil/IdeaProjects/worksheets/src/com/sdp/helloworld/spring/xml/beans.xml");
+        BeanFactory factory = new ClassPathXmlApplicationContext("file:/Users/Basil/IdeaProjects/worksheets/src/com/sdp/helloworld/spring/xml/basic/beans.xml");
         return factory;
 
     }
